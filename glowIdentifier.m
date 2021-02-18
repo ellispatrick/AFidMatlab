@@ -247,10 +247,10 @@ for r = 1:m
 end
 
 im1GlowRemoved = im1;
-im1GlowRemoved(bw==0) = 0;
+im1GlowRemoved(bw==1) = 0;
 im1GlowRemoved(glow1) = 0;
 
 im2GlowRemoved = im2;
-im2GlowRemoved(bw==0) = 0;
+im2GlowRemoved(bw==1) = 0;
 im2GlowRemoved(glow2) = 0;
 
